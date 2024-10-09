@@ -40,13 +40,17 @@
 (straight-use-package 'use-package)
 (setq straight-use-package-by-default t)
 
+
 (straight-use-package 's)
 (straight-use-package 'dash)
 (straight-use-package 'nov.el)
 (straight-use-package 'doom-themes)
 (straight-use-package 'visual-fill-column)
+(straight-use-package 'dirvish)
 
 (load-theme 'doom-dracula t)
+
+(dirvish-override-dired-mode)
 
 (use-package justify-kp
   :straight '(:type git :host github :repo "Fuco1/justify-kp"
