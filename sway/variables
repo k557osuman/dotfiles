@@ -1,0 +1,10 @@
+include $HOME/.config/sway/config
+
+#BROWSER 
+bindsym $mod+q exec firefox
+
+#TABLET
+
+bindsym $mod+Alt+q exec /usr/lib/gaomontablet/gaomontablet.sh
+
+bindsym $mod+p exec grim -g "$(slurp -d)" - | wl-copy

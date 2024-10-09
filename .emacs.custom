@@ -1,0 +1,15 @@
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   '("aec7b55f2a13307a55517fdf08438863d694550565dee23181d2ebd973ebd6b8" "8c7e832be864674c220f9a9361c851917a93f921fedb7717b1b5ece47690c098" "014cb63097fc7dbda3edf53eb09802237961cbb4c9e9abd705f23b86511b0a69" "58c996beb973f7e988ee4fd21c367b7a5bbdb0622ddfbbd112672a7b4e3d3b81" "603a831e0f2e466480cdc633ba37a0b1ae3c3e9a4e90183833bc4def3421a961" "f5f070872db3e4d8b82dbb2f3b1c60beca86fc93327a38ebddd22070458a14bc" "03239f8106a402b9d965757a0cdeab5e70961cb39fa11f1e803e9caf4250786d" "32fbecf5323ac72f1e55a2bbee83f3d919d9037236f0d957664f8920e047b5e3" "b8bd60a23b9e2f08b0c437231ee84f2dacc70fdc4d5a0fb87229bb9926273fdd" "dc15dbd4b0a00c64610fd4379a89424e0be1b418f09457e0f062cac931e8ca82" default))
+ '(package-selected-packages
+   '(dirvish eziam-themes tao-theme pdf-tools nov dired-quick-sort)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(variable-pitch ((t (:family "Liberation Sans")))))

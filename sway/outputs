@@ -1,0 +1,21 @@
+for_window [class="osu!.exe"] allow_tearing yes
+for_window [class="osu!.exe"] max_render_time 1
+for_window [class="osu!.exe"] mouse_warping none
+for_window [class="osu!.exe"] opacity 1
+for_window [class="osu!.exe"] border pixel 0
+for_window [class="osu!.exe"] adaptive_sync off
+for_window [app_id="osu!.exe"] allow_tearing yes
+for_window [app_id="osu!.exe"] max_render_time 1
+for_window [app_id="osu!.exe"] mouse_warping none
+for_window [app_id="osu!.exe"] opacity 1
+for_window [app_id="osu!.exe"] border pixel 0
+for_window [app_id="osu!.exe"] adaptive_sync off
+
+output DP-1 max_render_time 2
+output DP-1 adaptive_sync off
+output DP-1 allow_tearing yes
+
+#output DP-1 modeline 151.25 1600 1704 1872 2144 900 903 908 942 -hsync +vsync 
+
+output DP-1 modeline 93.34 1600 1608 1640 1680 900 912 920 926 +HSync -VSync
+
