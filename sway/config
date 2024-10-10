@@ -22,7 +22,6 @@ set $menu tofi-run | xargs swaymsg exec --
 
 # Autostart ActivityWatch (paru -S activitywatch-bin aw-watcher-window-wayland) 
 exec aw-qt
-exec bash -c 'logdir="${XDG_CACHE_HOME:-$HOME/.cache}/activitywatch/log/aw-watcher-window-wayland" && mkdir -p "$logdir" && RUST_BACKTRACE=1 aw-watcher-window-wayland > "$logdir/$(date -Iseconds).log" 2>&1'
 
 # Autostart Emacs w/ daemon
 exec emacs --daemon
