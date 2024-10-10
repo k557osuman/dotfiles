@@ -1,0 +1,3 @@
+# Emacs config
+
+bindsym $mod+Caps_Lock exec emacsclient -nc
