@@ -24,6 +24,8 @@ set $menu tofi-run | xargs swaymsg exec --
 exec aw-qt
 exec bash -c 'logdir="${XDG_CACHE_HOME:-$HOME/.cache}/activitywatch/log/aw-watcher-window-wayland" && mkdir -p "$logdir" && RUST_BACKTRACE=1 aw-watcher-window-wayland > "$logdir/$(date -Iseconds).log" 2>&1'
 
+# Autostart Emacs w/ daemon
+exec emacs --daemon
 
 ### Output configuration
 #
@@ -254,4 +256,4 @@ include /etc/sway/config.d/*
 include $HOME/.config/sway/variables
 include $HOME/.config/sway/inputs
 include $HOME/.config/sway/outputs
-
+include $HOME/.config/sway/emacs
