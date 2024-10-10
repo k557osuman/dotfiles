@@ -40,16 +40,17 @@
 (straight-use-package 'use-package)
 (setq straight-use-package-by-default t)
 
-
 (straight-use-package 's)
 (straight-use-package 'dash)
 (straight-use-package 'nov.el)
 (straight-use-package 'doom-themes)
 (straight-use-package 'visual-fill-column)
 (straight-use-package 'dirvish)
+(straight-use-package 'which-key)
 
 (load-theme 'doom-dracula t)
 
+(which-key-mode)
 (dirvish-override-dired-mode)
 
 (use-package justify-kp
