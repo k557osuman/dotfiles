@@ -40,6 +40,12 @@
 (straight-use-package 'use-package)
 (setq straight-use-package-by-default t)
 
+;; Straight Packages (Programming)
+(straight-use-package 'javadoc-lookup)
+(straight-use-package 'javadoc-help)
+
+;; Straight Packages (Misc.)
+
 (straight-use-package 's)
 (straight-use-package 'dash)
 (straight-use-package 'nov.el)
@@ -51,24 +57,18 @@
 (load-theme 'doom-dracula t)
 
 (which-key-mode)
-(dirvish-override-dired-mode)
+
+(dirvish-override-dired-mode t)
+
+;; eww browser config
+
+
+(defun mozilla-readability (start end)
+  (shell-command-on-region start end "node /home/mrbeats/readability.js" nil t))
 
 (use-package justify-kp
   :straight '(:type git :host github :repo "Fuco1/justify-kp"
                     :files (:defaults))
-  )
-
-(use-package eee
-  :straight '(:type git :host github :repo "eval-exec/eee.el"
-                 :files ("*.el" "*.sh"))
-  :config
-  
-  ;; Should have wezterm or alacritty installed, more terminal application is supporting...
-;; Issues and pull requests are welcome
-  (setq ee-terminal-command "alacritty")
-
-  (global-set-key (kbd "C-S-f") 'ee-rg)
-  
   )
 
 (require 'justify-kp)
