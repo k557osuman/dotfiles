@@ -22,7 +22,7 @@ current_time=$(date "+%H:%M")
 network=$(ip route get 1.1.1.1 | grep -Po '(?<=dev\s)\w+' | cut -f1 -d ' ')
 # interface_easyname grabs the "old" interface name before systemd renamed it
 interface_easyname=$(dmesg | grep $network | grep renamed | awk 'NF>1{print $NF}')
-ping=$(ping -c 1 www.google.es | tail -1 | awk '{print $4}' | cut -d '/' -f 2 | cut -d '.' -f 1)
+ping=$(ping -c 1 www.google.com | tail -1 | awk '{print $4}' | cut -d '/' -f 2 | cut -d '.' -f 1)
 
 # Others
 language=$(swaymsg -r -t get_inputs | awk '/49396:1269:Usb_KeyBoard_Usb_KeyBoard/;/xkb_active_layout_name/' | grep -A1 '\b49396:1269:Usb_KeyBoard_Usb_KeyBoard\b' | grep "xkb_active_layout_name" | awk -F '"' '{print $4}')
@@ -50,4 +50,4 @@ else
   audio_active='🔊'
 fi
 
-echo "⌨ $language | $network_active $interface_easyname ($ping ms) | 🔥 $loadavg_5min | $date_and_week $current_time"
+echo -e "⌨ $language | <span foreground='#33ff00'>$network_active $interface_easyname ($ping ms)</span> | 🔥 <span foreground='#c16b26'>$loadavg_5min</span> | $date_and_week <span foreground='#FFFFFF'>$current_time</span>"
